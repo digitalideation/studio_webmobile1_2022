@@ -1,0 +1,27 @@
+{
+  "name": "test-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite -- --port 8080",
+    "build": "vite build",
+    "preview": "vite preview",
+    "vitest": "vitest run --dom",
+    "vitest:report": "vitest run --dom --reporter json --outputFile test-results.json",
+    "cypress:open": "cypress open",
+    "cypress:report": "cypress run --reporter mochawesome"
+  },
+  "dependencies": {
+    "@vue/test-utils": "^2.2.1",
+    "vue": "^3.2.41"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.2.0",
+    "cypress": "^11.1.0",
+    "cypress-mochawesome-reporter": "^3.2.3",
+    "happy-dom": "^7.6.7",
+    "vite": "^3.2.3",
+    "vitest": "^0.25.1"
+  }
+}

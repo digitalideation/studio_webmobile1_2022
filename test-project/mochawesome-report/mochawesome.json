@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-11-22T08:17:16.096Z",
+    "end": "2022-11-22T08:17:30.137Z",
+    "duration": 14041,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "09cc08ab-4964-4a67-8556-bcdb8f36912f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\spec.cy.js",
+      "file": "cypress\\e2e\\spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d3fb4df8-513c-4637-bfb9-e2c4a98340e5",
+          "title": "Searching for Maria Husmann should provide a link to the correct profile page as the first search result.",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "Searching for Maria Husmann should provide a link to the correct profile page as the first search result. passes",
+              "timedOut": null,
+              "duration": 12082,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://hslu.ch/');\ncy.get('input[placeholder=\"Suchbegriff eingeben\"]').type(\"Maria Husmann\");\ncy.get('#submit-sitesearch').click();\ncy.get('#fl li:first-of-type a').click();\ncy.get('h1 span').contains('Maria');\ncy.get('h1 span').contains('Husmann');",
+              "err": {},
+              "uuid": "1f3a69f6-35ce-446b-8840-de3ff289ea73",
+              "parentUUID": "d3fb4df8-513c-4637-bfb9-e2c4a98340e5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1f3a69f6-35ce-446b-8840-de3ff289ea73"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12082,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}

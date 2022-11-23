@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+    <testsuite name="src/tests/math.test.js" timestamp="2022-11-22T08:24:50.103Z" hostname="N0006270" tests="1" failures="0" errors="0" skipped="0" time="0.003">
+        <testcase classname="src/tests/math.test.js" name="division by 10)" time="0.002">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/tests/HelloWorld.test.js" timestamp="2022-11-22T08:24:50.160Z" hostname="N0006270" tests="2" failures="0" errors="0" skipped="0" time="0.02">
+        <testcase classname="src/tests/HelloWorld.test.js" name="HelloWorld &gt; message is displayed" time="0.013">
+        </testcase>
+        <testcase classname="src/tests/HelloWorld.test.js" name="HelloWorld &gt; increment button increases count" time="0.005">
+        </testcase>
+    </testsuite>
+</testsuites>
